@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    <title>Manage Unique Files</title>
+</head>
+<body>
+    <H2>Manage Unique Files</H2>
+        <!-- Logging<br>
+            {% for md5sum, fileList in md5sumToFile.items() %}
+                md5sum: {{md5sum}}, filelist: {{fileList}}<br>
+                {% for relatedFile in fileList %}
+                    {{ mainFilesIndex[relatedFile]['fullFileName'] }}<br>
+                {% endfor %}
+            {% endfor %}
+            -->
+    {% if MD5sumOfRelativePath %}
+        <div class="shell-wrap">
+            <p class="shell-top-bar">Manage Unique Files: Status</p>
+            <ul class="shell-body">
+                <li>md5sum - {{MD5sumOfRelativePath}}</li>
+                {%if error %}
+                    <li>{{error}}</li>
+                <li><font color="red">** FAILED!! </font></li>
+                {% else %}
+                    <li>rm {{fullFileName}}</li>
+                    <li>...File deleted</li>
+                {% endif %}
+            </ul>
+        </div>
+    {% endif %}
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>File Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for md5sum, fileList in md5sumToFile.items() %}
+                <tbody class="labels">
+                    <tr>
+                        <td colspan="5">
+                            <label for="{{md5sum}}">
+                                <img alt="{{mainFilesIndex[fileList[0]]['relativePathToFile']}}" width=50 height=50 src="{{mainFilesIndex[fileList[0]]['relativePathToFile']}}"> - {{md5sum}}
+                            </label>
+                            <input type="checkbox" name="{{md5sum}}" id="{{md5sum}}" data-toggle="toggle">
+                        </td>
+                    </tr>
+                </tbody>
+                <tbody class="hide">
+                    {% for relatedFile in fileList %}
+                        <tr>
+                            <td> {{ mainFilesIndex[relatedFile]['fullFileName'] }}</td>
+                            <td>
+                                <form action="/delete/{{ relatedFile }}" method="POST">
+                                    <input type="hidden" name="filename">
+                                    <input type="submit" value="Delete File">
+                                </form>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            {% endfor %}
+        </tbody>
+    </table>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="{{ url_for('static',filename='js/script.js') }}"></script>
+</body>
+</html>
+

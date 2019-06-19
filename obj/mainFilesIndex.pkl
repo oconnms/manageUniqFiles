@@ -1,0 +1,66 @@
+(dp0
+V56b5f682ce9a67f4aa5b590b29acae7e
+p1
+(dp2
+VfullFileName
+p3
+VC:\u005cUsers\u005coconn\u005cPycharmProjects\u005cmanageUniqueFiles\u005cstatic\u005cimages\u005c1 - Copy.jpg
+p4
+sVfileName
+p5
+V1 - Copy.jpg
+p6
+sVmd5sum
+p7
+V06f57458e1dbfe581eccd2d6c20dbd0e
+p8
+sVrelativePathToFile
+p9
+V.\u005cstatic\u005cimages\u005c1 - Copy.jpg
+p10
+ssVf35cf51730d435b6de46bb3df9a7edb6
+p11
+(dp12
+g3
+VC:\u005cUsers\u005coconn\u005cPycharmProjects\u005cmanageUniqueFiles\u005cstatic\u005cimages\u005c3 - Copy (5) - Copy.jpg
+p13
+sg5
+V3 - Copy (5) - Copy.jpg
+p14
+sg7
+V957afd83c724cd1f02838a74d8ac3a16
+p15
+sg9
+V.\u005cstatic\u005cimages\u005c3 - Copy (5) - Copy.jpg
+p16
+ssV75c3803569065731dda0cfa53bca5479
+p17
+(dp18
+g3
+VC:\u005cUsers\u005coconn\u005cPycharmProjects\u005cmanageUniqueFiles\u005cstatic\u005cimages\u005c4.1.jpg
+p19
+sg5
+V4.1.jpg
+p20
+sg7
+V69d1c845bbb9ca5ae2d6467ae3d8689a
+p21
+sg9
+V.\u005cstatic\u005cimages\u005c4.1.jpg
+p22
+ssV22d57f25617f374a7364191b510add70
+p23
+(dp24
+g3
+VC:\u005cUsers\u005coconn\u005cPycharmProjects\u005cmanageUniqueFiles\u005cstatic\u005cimages\u005cNew folder\u005c2 - Copy (9) - Copy.jpg
+p25
+sg5
+V2 - Copy (9) - Copy.jpg
+p26
+sg7
+Vf02e529023590c45f1215545023b63ce
+p27
+sg9
+V.\u005cstatic\u005cimages\u005cNew folder\u005c2 - Copy (9) - Copy.jpg
+p28
+ss.
