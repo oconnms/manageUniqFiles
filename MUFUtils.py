@@ -3,6 +3,7 @@
 import pickle
 import hashlib
 
+#comment
 def md5sumOfFile(file):
     with open(file, 'rb') as fh:
         m = hashlib.md5()
